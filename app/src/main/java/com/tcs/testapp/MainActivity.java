@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity { //implements View.OnClickListener {
 
     private EditText editTextSubject;
     private EditText editTo;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextContent = (EditText)findViewById(R.id.editTextContent);
         editTo = (EditText)findViewById(R.id.editTo);
         buttonSendMail = (Button)findViewById(R.id.buttonSendMail);
-        buttonSendMail.setOnClickListener(this);
+        //buttonSendMail.setOnClickListener(this);
     }
 
     public void composeEmail(String[] addresses, String subject, String content) {
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @Override
+    /*@Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.buttonSendMail:
@@ -51,5 +51,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String[] getAdresses() {
         String address = editTo.getText().toString();
         return address.split(";");
-    }
+    }*/
 }
