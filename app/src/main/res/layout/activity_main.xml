@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/ten_dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:hint="@string/to"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:hint="@string/subject"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginTop="@dimen/ten_dp">
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/editTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/content" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonSendMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:text="@string/send" />
+
+</LinearLayout>
